@@ -1,0 +1,65 @@
+/* 상단이미지 */
+.top_container .big_title {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.top_container .top_img-background {
+  position: relative;
+  height: 230px;
+}
+
+/* sidebar */
+
+.sidebar {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.sidebar .nav_item {
+  width: 100px;
+  padding: 25px 12px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.sidebar .nav_title {
+  width: 100px;
+  padding: 0px 12px 18px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid #222020;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sidebar .nav_item a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.sidebar .nav_item a:hover {
+  opacity: 1;
+}
+
+/* main */
+
+.main {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+}
+
+.sub_title {
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}

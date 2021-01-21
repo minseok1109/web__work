@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .header__column {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .header__column .title {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.header .header__column:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header .title {
+  margin-left: 8px;
+}
+
+.header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #696663;
+  min-width: 200px;
+  padding: 5px;
+  z-index: 1;
+  top: 55px;
+}
+
+.dropdown-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__column .dropdown-list .header__column-dropdown {
+  margin: 30px 10px;
+  position: relative;
+  /* display: inline-block; */
+}
+
+.header__column:first-child {
+  margin: 20px 10px;
+}
+
+.header .header__column a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.header .header__column .header__column-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.top_container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top_container .top_img-background {
+  width: 100%;
+  height: 550px;
+}
+
+.top_container .big_title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.top_container .title_description {
+  position: absolute;
+  top: 260px;
+  left: 33%;
+}
+
+.connect {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect .noti {
+  display: block;
+  margin-top: 8px;
+  padding: 28px 0px;
+  font-weight: 700;
+  color: #add63e;
+}
+
+.connect .tit {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.connect .clinic_info {
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.connect .clinic_box {
+  color: white;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.connect .clinic_box h1 {
+  padding: 10px;
+}
+
+.connect .box1 {
+  background-color: #5aaeeb;
+}
+.connect .box2 {
+  background-color: #f57045;
+}
+.connect .box3 {
+  background-color: #467ad4;
+}
