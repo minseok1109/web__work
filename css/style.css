@@ -1,22 +1,16 @@
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.header .header__column {
+.header .header__column a {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .header .header__column .title {
   font-weight: 700;
-  opacity: 0.7;
-}
-
-.header .header__column:first-child {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .header .icon {
@@ -29,41 +23,78 @@
   margin-left: 8px;
 }
 
-.header .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #696663;
-  min-width: 200px;
-  padding: 5px;
-  z-index: 1;
-  top: 55px;
-}
-
-.dropdown-list {
-  display: flex;
-  align-items: center;
-}
-
-.header__column .dropdown-list .header__column-dropdown {
-  margin: 30px 10px;
+.dropdown-parent {
   position: relative;
-  /* display: inline-block; */
 }
 
-.header__column:first-child {
-  margin: 20px 10px;
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 140%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: 1;
+  transition: all 0.6s ease-in-out 0s, visibility 0s linear 0.2s,
+    z-index 0s linear 0.01s;
 }
 
-.header .header__column a {
-  color: inherit;
+.dropdown-parent:focus .dropdown,
+.dropdown-parent:focus-within .dropdown,
+.dropdown-parent:hover .dropdown {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+body {
+  padding: 2%;
+  font: 18px/1.4 sans-serif;
+}
+
+.header__column a {
+  color: #000000;
+  display: block;
+  padding: 1em 1em;
   text-decoration: none;
-  opacity: 0.7;
   font-weight: 700;
 }
 
-.header .header__column .header__column-dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-parent a {
+  opacity: 0.7;
 }
+
+.dropdown-parent a:hover {
+  opacity: 1;
+}
+
+.header__column ul,
+.header__column ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__column > ul {
+  text-align: center;
+}
+
+.header__column > ul > li {
+  display: inline-block;
+}
+
+.dropdown a {
+  background: #333333;
+  color: white;
+}
+.dropdown a:hover {
+  color: blue;
+}
+
+/* 상단 이미지 */
 
 .top_container {
   position: relative;
@@ -72,8 +103,8 @@
 }
 
 .top_container .top_img-background {
-  width: 100%;
-  height: 550px;
+  width: 100vw;
+  height: 60vh;
 }
 
 .top_container .big_title {
@@ -81,7 +112,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 6em;
   font-weight: 600;
 }
 
@@ -91,8 +122,11 @@
   left: 33%;
 }
 
+/* 밑에 상자 */
+
 .connect {
-  width: 1200px;
+  width: 100%;
+  height: 30vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -100,14 +134,15 @@
 .connect .noti {
   display: block;
   margin-top: 8px;
-  padding: 28px 0px;
+  padding: 15px 0px;
   font-weight: 700;
   color: #add63e;
 }
 
 .connect .tit {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .connect .clinic_info {
@@ -121,6 +156,16 @@
   color: white;
   margin-top: 10px;
   padding: 10px 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.connect .clinic_box a {
+  color: white;
+  text-decoration: none;
+}
+
+.connect .clinic_box a:hover {
+  color: black;
 }
 
 .connect .clinic_box h1 {
