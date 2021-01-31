@@ -1,3 +1,5 @@
+@import 'class.css';
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -33,11 +35,11 @@
   position: absolute;
   top: 140%;
   left: 0;
-  width: 100%;
+  width: 140%;
   transform: translateY(-2em);
   z-index: 1;
   transition: all 0.6s ease-in-out 0s, visibility 0s linear 0.2s,
-    z-index 0s linear 0.01s;
+    z-index 0s linear 0.1s;
 }
 
 .dropdown-parent:focus .dropdown,
@@ -47,7 +49,7 @@
   opacity: 1;
   z-index: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0.01s;
 }
 
 body {
@@ -125,9 +127,6 @@ body {
 /* 밑에 상자 */
 
 .connect {
-  width: 100%;
-  height: 30vh;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -145,39 +144,47 @@ body {
   margin-bottom: 18px;
 }
 
-.connect .clinic_info {
-  margin-top: 10px;
-  overflow: hidden;
+.connect .cards {
   display: flex;
   justify-content: space-around;
 }
 
-.connect .clinic_box {
-  color: white;
-  margin-top: 10px;
-  padding: 10px 10px;
-  text-decoration: none;
+/* 상담안내 */
+.clinic_info_box {
+  max-width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  background-color: #cdf0b0;
+}
+.clinic_info_box img {
+  max-width: 100%;
+  margin-left: 2rem;
+  border-radius: 20px;
+}
+
+.clinic_info .clinic_info_title {
   font-weight: 700;
-}
-.connect .clinic_box a {
-  color: white;
-  text-decoration: none;
+  font-size: 35px;
 }
 
-.connect .clinic_box a:hover {
-  color: black;
+.clinic_info .clinic_info_list {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+.clinic_info .clinic_info_list .clinic_info_detail {
+  font-size: 1.5rem;
+  margin-bottom: 13rem;
 }
 
-.connect .clinic_box h1 {
-  padding: 10px;
+.clinic_info .clinic_info_list .clinic_info_detail:last-child {
+  margin-bottom: 9rem;
 }
 
-.connect .box1 {
-  background-color: #5aaeeb;
-}
-.connect .box2 {
-  background-color: #f57045;
-}
-.connect .box3 {
-  background-color: #467ad4;
+i.fas,
+i.far {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 15px rgb(107, 167, 11);
+  padding: 0.5em 0.6em;
 }

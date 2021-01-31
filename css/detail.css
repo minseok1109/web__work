@@ -33,15 +33,16 @@
 }
 
 .sidebar .nav_item {
-  width: 100px;
+  width: 100%;
   padding: 15px 12px;
   margin-bottom: 0px;
   border-bottom: 1px solid #e4e4e4;
+
   font-size: 15px;
 }
 
 .sidebar .nav_title {
-  width: 100px;
+  width: auto;
   padding: 0px 12px 18px;
   margin-bottom: 0px;
   border-bottom: 3px solid #222020;
