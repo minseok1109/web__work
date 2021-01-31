@@ -76,13 +76,16 @@
   position: absolute;
   top: 40%;
   left: 22%;
+  width: 100%;
+  height: 100%;
 }
 
 .sub_title {
+  color: #000000;
   font-size: 27px;
   line-height: 27px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
 }
 
 .main .contents {
@@ -93,4 +96,128 @@
 
 .main .contents .content {
   margin-bottom: 10px;
+}
+
+i.fas,
+i.far {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 15px rgb(0, 16, 240);
+  padding: 0.5em 0.6em;
+}
+
+/* 오시는 길 */
+.main .map {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* 상담원 소개 */
+
+.main .main_content {
+  width: 100%;
+  height: 1260px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.main .doctor_img {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+.main .doctor_education > li,
+.main .doctor_article > li,
+.main .doctor_Qualification > li,
+.main .doctor_lecture > li,
+.main .doctor_lecture_2 > li,
+.main .doctor_story > li {
+  margin: 10px 0px;
+  list-style-type: circle;
+}
+
+.main .doctor_education > div,
+.main .doctor_article > div,
+.main .doctor_Qualification > div,
+.main .doctor_lecture > div,
+.main .doctor_lecture_2 > div,
+.main .doctor_story > div {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid green;
+}
+
+.main .doctor_story {
+  margin-bottom: 50px;
+}
+
+.main .man_detail {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+}
+
+.main .doctor_name {
+  position: absolute;
+  top: 5%;
+  left: 17%;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid green;
+  width: 180px;
+  font-weight: 700;
+  color: black;
+}
+
+/* 상담원 소개 2 */
+
+.main .doctor_img_2 {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+.main .main_content_2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.main .doctor_name_2 {
+  position: absolute;
+  top: 0%;
+  left: 17%;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid green;
+  width: 180px;
+  font-weight: 700;
+  color: black;
+}
+
+.main .man_detail_2 {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+}
+
+.doctor_story_2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0px;
+  border-bottom: 2px solid green;
+  padding-bottom: 10px;
+  width: 50px;
+}
+
+.man_detail_2 > li {
+  list-style-type: circle;
+  margin: 15px 0px;
 }

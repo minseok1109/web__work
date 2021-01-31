@@ -10,6 +10,8 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
+  width: 100%;
+  height: 100%;
 }
 body::before,
 body::after {
@@ -67,8 +69,16 @@ body,
   letter-spacing: 2px;
 }
 
+.font-size-15rem {
+  font-size: 1.5rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-50 {
+  width: 50px;
 }
 
 .text-center {
