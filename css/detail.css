@@ -29,7 +29,7 @@
 .sidebar {
   position: absolute;
   top: 40%;
-  left: 10%;
+  left: 6%;
 }
 
 .sidebar .nav_item {
@@ -75,9 +75,9 @@
 .main {
   position: absolute;
   top: 40%;
-  left: 22%;
+  left: 17%;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
 
 .sub_title {
@@ -220,4 +220,68 @@ i.far {
 .man_detail_2 > li {
   list-style-type: circle;
   margin: 15px 0px;
+}
+
+/* ADHD */
+.main .disease_content {
+  display: flex;
+  background: #e5e5e5;
+  width: 50%;
+  height: 250px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 14%;
+}
+
+.disease_content .disease_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0087cd;
+  margin-bottom: 20px;
+}
+
+.disease_content .disease_subcontent {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.style-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #7a7c7f;
+  font-size: 20px;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+  list-style-type: decimal;
+  font-weight: 400;
+}
+
+.style-p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+  font-weight: 400;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+/* 교육프로그램 */
+.main .character {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0087cd;
 }

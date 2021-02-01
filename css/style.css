@@ -53,6 +53,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
   padding: 2%;
   font: 18px/1.4 sans-serif;
 }
