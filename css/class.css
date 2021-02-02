@@ -72,6 +72,9 @@ body,
 .font-size-15rem {
   font-size: 1.5rem;
 }
+.font-size-12rem {
+  font-size: 1.2rem;
+}
 
 .w-full {
   width: 100%;
@@ -155,6 +158,10 @@ body,
 }
 .float-right {
   float: right;
+}
+
+.underline {
+  border-bottom: 1px solid green;
 }
 
 /**Margin and padding utilities*/
