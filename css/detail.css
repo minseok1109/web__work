@@ -73,6 +73,7 @@
 /* main */
 
 .main {
+  width: 940px;
   position: absolute;
   top: 40%;
   left: 16%;
@@ -302,4 +303,98 @@ i.far {
   font-family: 'Do Hyeon', sans-serif;
   font-size: 1.5rem;
   line-height: 35px;
+}
+
+.main .child_tit h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #0087cd;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main .child_tit p {
+  font-size: 18px;
+  line-height: 34px;
+  color: black;
+  font-weight: 400;
+}
+
+.adhd_box ul {
+  border: 1px #aaa solid;
+  border-right: none;
+  border-top: none;
+  margin-top: 35px;
+}
+
+.adhd_box li {
+  float: left;
+  width: calc(33.3333% - 1px);
+  border-right: 1px #aaa solid;
+  height: 280px;
+}
+
+.adhd_box ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.adhd_box {
+  padding-bottom: 75px;
+}
+
+.adhd_box li > dl > dt {
+  text-align: center;
+  border-bottom: 1px #aaa solid;
+  border-top: 1px #aaa solid;
+  background: #008ace;
+  color: #fff;
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+
+.adhd_box li > dl > dt > span {
+  color: #79f4ff;
+  font-size: 18px;
+}
+
+.adhd_box li > dl > dd {
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  padding-left: 27px;
+}
+
+.adhd_box li > dl > dd:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #292929;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.diagnosis_step {
+  padding-bottom: 75px;
+}
+
+.child_list h5 {
+  margin-bottom: 35px;
+}
+
+.child_list > p {
+  font-size: 16px;
+}
+
+.child_list_s06 dt {
+  color: #008ace;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.child_list_s04 p span {
+  color: #008ace;
 }
