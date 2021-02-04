@@ -158,15 +158,15 @@ i.far {
 
 .main .man_detail {
   position: absolute;
-  top: 6%;
-  left: 151%;
+  top: 4%;
+  left: 27%;
   width: max-content;
 }
 
 .main .doctor_name {
   position: absolute;
-  top: 3%;
-  left: 144%;
+  top: 5%;
+  left: 0%;
   padding-bottom: 15px;
   font-size: 1.5rem;
   border-bottom: 2px solid green;
@@ -194,7 +194,7 @@ i.far {
 .main .doctor_name_2 {
   position: absolute;
   top: 0%;
-  left: 137%;
+  left: 0%;
   padding-bottom: 15px;
   font-size: 1.5rem;
   border-bottom: 2px solid green;
@@ -206,7 +206,7 @@ i.far {
 .main .man_detail_2 {
   position: absolute;
   top: 15%;
-  left: 151%;
+  left: 27%;
   width: max-content;
 }
 
@@ -305,12 +305,13 @@ i.far {
   line-height: 35px;
 }
 
+/* child */
+
 .main .child_tit h4 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  color: #0087cd;
-  font-size: 2rem;
-  font-weight: 700;
+  color: #1e2e6a;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .main .child_tit p {
@@ -377,16 +378,49 @@ i.far {
   left: 12px;
 }
 
+.adhd_list ul > li {
+  list-style-type: circle;
+  line-height: 30px;
+}
+
+.adhd_list dl {
+  display: table;
+  margin-bottom: 2px;
+}
+.adhd_list dl dt {
+  display: table-cell;
+  vertical-align: middle;
+  width: 140px;
+  background: #73a802;
+  height: 28px;
+  color: #fff;
+  text-align: center;
+}
+.adhd_list dl dd {
+  display: table-cell;
+  vertical-align: middle;
+  width: calc(100% - 140px);
+  padding-left: 20px;
+}
+
+.adhd_cure dd {
+  margin-bottom: 40px;
+}
+
 .diagnosis_step {
   padding-bottom: 75px;
 }
 
 .child_list h5 {
   margin-bottom: 35px;
+  font-size: 24px;
+  margin-top: 35px;
 }
 
 .child_list > p {
   font-size: 16px;
+  line-height: 40px;
+  margin-bottom: 50px;
 }
 
 .child_list_s06 dt {
@@ -395,6 +429,236 @@ i.far {
   line-height: 30px;
 }
 
-.child_list_s04 p span {
+.game_list p span {
   color: #008ace;
+}
+
+.concentrate_list dl > dt {
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  color: #008ace;
+  font-weight: 600;
+}
+
+.concentrate_list dl > dd {
+  margin: 40px 0px;
+}
+
+.evaluation li {
+  float: left;
+  width: calc(25% - 18px);
+  margin-left: 18px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.evaluation li > div {
+  text-align: center;
+  background: #008ace;
+  color: #fff;
+  padding: 30px 0;
+  height: 155px;
+}
+
+.evaluation li > div > span {
+  display: block;
+  color: #79f4ff;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.evaluation li > div > p {
+  color: #fff;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.study_list dl {
+  margin-bottom: 30px;
+}
+
+.study_list dl > dt > span {
+  background: rgb(9, 201, 9);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.study_list dt p {
+  margin-top: 20px;
+  padding: 5px 0;
+  font-size: 20px;
+  color: #1e2e6a;
+  font-weight: 600;
+}
+
+.study_list dd {
+  padding: 10px;
+}
+
+.study_list dd strong {
+  color: #008ace;
+  font-weight: normal;
+}
+
+/* adult */
+
+.child_list h5 {
+  border-bottom: 3px solid green;
+  width: max-content;
+  padding-bottom: 15px;
+}
+
+.child_box2 {
+  padding: 8px 30px;
+  line-height: 35px;
+  border: 1px solid black;
+}
+.child_box2 li {
+  list-style-type: decimal;
+}
+
+.child_box2 dl > dd > span {
+  display: inline-block;
+  background: #008ace;
+  color: white;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.adult01_list01 dl > dt {
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  color: #008ace;
+  font-weight: 600;
+}
+
+.adult01_list01 dl > dd {
+  line-height: 45px;
+  margin-bottom: 1.5rem;
+}
+
+/* stress */
+
+.stress_tit p {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.depression_list .tit {
+  background: #40c164;
+  width: max-content;
+  padding: 12px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.depression_list .contents {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.stress_Symptom dl {
+  display: table;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.stress_Symptom dl > dt {
+  display: table-cell;
+  vertical-align: middle;
+  width: 140px;
+  background: #73a802;
+  height: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.stress_Symptom dl > dd {
+  display: table-cell;
+  vertical-align: middle;
+  width: calc(100% - 140px);
+  padding-left: 20px;
+}
+
+.stress_box {
+  padding: 20px;
+  background: #d2d2d2;
+}
+
+/* 불안 */
+
+.communication_box {
+  border: 1px solid black;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+}
+
+.communication_box dd > span {
+  display: inline-block;
+  background: #40c164;
+  color: white;
+  padding: 5px;
+  margin-right: 8px;
+}
+
+.communication_box dl > dd {
+  margin-bottom: 15px;
+}
+
+.unrest_list dl > dt {
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  color: #008ace;
+  font-weight: 600;
+}
+
+.unrest_list dl > dd {
+  line-height: 40px;
+}
+
+.unrest_list dd > ul > li {
+  display: table;
+  margin-bottom: 20px;
+}
+
+.unrest_list dd > ul > li > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.unrest_list dd > ul > li > div.tit {
+  display: table-cell;
+  background: #008ace;
+  color: #fff;
+  width: 75px;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.unrest_list dd > ul > li > div.contents {
+  display: table-cell;
+
+  line-height: 20px;
+  font-size: 16px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.couple_list dl > dt {
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  color: #008ace;
+  font-weight: 600;
+}
+
+.couple_list dl > dd {
+  line-height: 30px;
+  margin: 15px 0 40px 0;
 }
