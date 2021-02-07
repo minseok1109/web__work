@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -65,6 +69,9 @@
           </li>
         </ul>
       </div>
+      <div class="mobile_header_btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
     <div class="top_container">
       <img class="top_img-background" src="/img/background.jpg" alt="top_img" />
@@ -72,82 +79,101 @@
         <h1>맑은 마음상담센터</h1>
       </div>
     </div>
-   <nav class="sidebar">
-       <ul>
-        <li class="nav_title"><span>센터 소개</span></a></li>
-        <li class="nav_item"><a href="/html/center/center.html"><span >소개 & 장점</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_1.html"><span>상담 안내</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_2.html"><span class="click">상담원 소개</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_3.html"><span>오시는 길</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_4.html"><span>둘러보기</span></a></li>
-       </ul>
-   </nav>
-   <main class="main">
-       <h3 class="sub_title">상담원 소개</h3>
-       <div class="main_content">
-         <!-- <img class="doctor_img" src="/img/woman.jpg" alt="woman"> -->
-         <h1 class="doctor_name">상담소장 윤금자</h1>
-         <ul class="man_detail">
-           <li class="man_detail_list">
-             <ul class="doctor_education">
-               <div class="w-50">학력</div>
-               <li>고려대학교 철학박사과정 수료(서양철학)</li>
-               <li>강원대학교 철학박사(동양철학)</li>
-             </ul>
-             <ul class="doctor_article">
-               <div style="width: 100px">주요논문</div>
-               <li>노자의 ‘無爲自然的’마음치유 연구</li>
-               <li>노자의 ‘자연성회복(復歸於樸)’을 위한 ‘마음치유’</li>
-               <li>醇言의 本體論과 자아수양공부론 연구</li>
-               <li>데카르트의 코기토에 대한 하이데거의 해석</li>
-               <li>하이데거의 세계개념</li>
-             </ul>
-             <ul class="doctor_Qualification">
-               <div class="w-50">자격</div>
-               <li>심리상담자격증 소지</li>
-             </ul>
-             <ul class="doctor_lecture">
-               <div style="width: 165px">대학 강의 경력</div>
-               <li>삶과 철학</li>
-               <li>인간과 윤리</li>
-               <li>사랑과 죽음</li>
-               <li>행복에 이르는 지혜</li>
-               <li>여성철학</li>
-               <li>감성인문학</li>
-               <li>가치관과 윤리</li>
-               <li>종교와 인간</li>
-               <li>페미니즘과 여성철학</li>
-               <li>현대사회와 윤리</li>
-               <li>성과 철학</li>
-             </ul>
-             <ul class="doctor_lecture_2">
-               <div style="width: 110px">특강 경력</div>
-               <li>강원도 전 지역 중, 고 학생을 위한 특강 (학교로 찾아가는 인문사회학 아카 데미-주최: 강원도민일보. 후원: 강원도교육청)</li>
-               <li>강원도 전 지역 초, 중 학생을 위한 특강 (행복인문학-주최: 교육부, 한국연구 재단. 주관: 강원대학교 인문도시사업단, 강원도교육청)</li>
-               <li>일반인을 위한 특강(춘천시민들을 위한 다수의 인문학 특강)</li>
-             </ul>
-             <ul class="doctor_story">
+    <nav class="sidebar">
+      <ul>
+        <li class="nav_title"><span>센터 소개</span></li>
+        <li class="nav_item">
+          <a href="/html/center/center.html"><span>소개 & 장점</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_1.html"><span>상담 안내</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_2.html"
+            ><span class="click">상담원 소개</span></a
+          >
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_3.html"><span>오시는 길</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_4.html"><span>둘러보기</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h3 class="sub_title">상담원 소개</h3>
+      <div class="main_content">
+        <h1 class="doctor_name">상담소장 윤금자</h1>
+        <ul class="man_detail">
+          <li class="man_detail_list">
+            <ul class="doctor_education">
+              <div class="w-50">학력</div>
+              <li>고려대학교 철학박사과정 수료(서양철학)</li>
+              <li>강원대학교 철학박사(동양철학)</li>
+            </ul>
+            <ul class="doctor_article">
+              <div style="width: 100px">주요논문</div>
+              <li>노자의 ‘無爲自然的’마음치유 연구</li>
+              <li>노자의 ‘자연성회복(復歸於樸)’을 위한 ‘마음치유’</li>
+              <li>醇言의 本體論과 자아수양공부론 연구</li>
+              <li>데카르트의 코기토에 대한 하이데거의 해석</li>
+              <li>하이데거의 세계개념</li>
+            </ul>
+            <ul class="doctor_Qualification">
+              <div class="w-50">자격</div>
+              <li>심리상담자격증 소지</li>
+            </ul>
+            <ul class="doctor_lecture">
+              <div style="width: 165px">대학 강의 경력</div>
+              <li>삶과 철학</li>
+              <li>인간과 윤리</li>
+              <li>사랑과 죽음</li>
+              <li>행복에 이르는 지혜</li>
+              <li>여성철학</li>
+              <li>감성인문학</li>
+              <li>가치관과 윤리</li>
+              <li>종교와 인간</li>
+              <li>페미니즘과 여성철학</li>
+              <li>현대사회와 윤리</li>
+              <li>성과 철학</li>
+            </ul>
+            <ul class="doctor_lecture_2">
+              <div style="width: 110px">특강 경력</div>
+              <li>
+                강원도 전 지역 중, 고 학생을 위한 특강 (학교로 찾아가는
+                인문사회학 아카 데미-주최: 강원도민일보. 후원: 강원도교육청)
+              </li>
+              <li>
+                강원도 전 지역 초, 중 학생을 위한 특강 (행복인문학-주최: 교육부,
+                한국연구 재단. 주관: 강원대학교 인문도시사업단, 강원도교육청)
+              </li>
+              <li>일반인을 위한 특강(춘천시민들을 위한 다수의 인문학 특강)</li>
+            </ul>
+            <ul class="doctor_story">
               <div style="width: 50px">약력</div>
               <li>(현) K링크(주)인문학연구소 소장</li>
-              <li>(현) 강원대학교 평생교육원 (행복인문학: 고전읽기-노자, 논어, 중용)강사</li>
+              <li>
+                (현) 강원대학교 평생교육원 (행복인문학: 고전읽기-노자, 논어,
+                중용)강사
+              </li>
               <li>(현) 강원교육지원청 영재문학 지도교사</li>
               <li>(현) (사)책읽는춘천 이사</li>
             </ul>
-           </li>
-         </ul>
-       </div>
-       <div class="main_content_2">
-         <!-- <img class="doctor_img_2" src="/img/man.jpg" alt="man"> -->
-         <h1 class="doctor_name_2">상담원 김남기</h1>
-         <ul class="man_detail_2">
-           <h1 class="doctor_story_2">약력</h1>
-           <li>서울 농학교 특수교사</li>
-           <li>서울 광진학교 언어치료교사</li>
-           <li>해누리 아동발달센터 인지치료사</li>
-           <li>미술심리상담사</li>
-           <li>성모마음정신과 아동청소년상담사</li>
-         </ul>
-       </div>
-   </main>
-   </body>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content_2">
+        <h1 class="doctor_name_2">상담원 김남기</h1>
+        <ul class="man_detail_2">
+          <h1 class="doctor_story_2">약력</h1>
+          <li>서울 농학교 특수교사</li>
+          <li>서울 광진학교 언어치료교사</li>
+          <li>해누리 아동발달센터 인지치료사</li>
+          <li>미술심리상담사</li>
+          <li>성모마음정신과 아동청소년상담사</li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>

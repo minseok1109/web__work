@@ -1,5 +1,6 @@
 @import 'class.css';
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import 'mobile.css';
 
 .header {
   display: flex;
@@ -206,8 +207,16 @@ i.far {
   height: 200px;
 }
 
+.main img {
+  max-width: 100%;
+}
+
 .main .top_box .top_content {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 5%;
+}
+
+.dropdown-parent.show {
+  display: block;
 }

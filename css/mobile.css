@@ -1,18 +1,82 @@
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .connect,
   .clinic_info_box img,
   .header .header__column:nth-child(2) {
     display: none;
   }
+
   .header {
-    height: auto;
+    height: 80px;
     position: fixed;
     z-index: 1;
     width: 100%;
     background: white;
     border-bottom: 1px solid gray;
   }
+
+  .top_container .top_img-background {
+    max-width: 100%;
+    height: 30vh;
+  }
+
   .header .mobile_header_btn {
+    display: block !important;
+  }
+
+  .mobile_cards {
     display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .mobile_cards .mobile_card {
+    padding: 20px;
+    background: #1a8b36;
+    margin-bottom: 10px;
+  }
+
+  .mobile_cards .mobile_card:nth-child(2n) {
+    background: #db8503;
+  }
+
+  .mobile_cards .mobile_card h1 {
+    margin-bottom: 35px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .top_container {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .top_container h1 {
+    top: 50%;
+    left: 50%;
+    /* margin-left: 64%; */
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .top_container img {
+    width: 100%;
+  }
+
+  .top_container .center_big_title {
+    top: 30% !important;
+    left: 50% !important;
+    margin-left: 0px !important;
+  }
+
+  .main {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 35px;
+    margin-left: 0px !important;
   }
 }

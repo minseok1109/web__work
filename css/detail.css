@@ -6,6 +6,7 @@
   transform: translate(-50%, -50%);
   font-size: 45px;
   font-weight: 600;
+  margin-left: 100px;
 }
 
 .top_container .top_img-background {
@@ -73,10 +74,12 @@
 /* main */
 
 .main {
-  width: 940px;
+  max-width: 100%;
   position: absolute;
   top: 40%;
   left: 16%;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .sub_title {
@@ -255,7 +258,6 @@ i.far {
   align-items: flex-start;
   color: #7a7c7f;
   font-size: 20px;
-  font-family: 'Libre Baskerville', serif;
   line-height: 45px;
   text-shadow: 0 1px 1px #fff;
   padding-top: 20px;

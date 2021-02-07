@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -64,6 +68,9 @@
           </li>
         </ul>
       </div>
+      <div class="mobile_header_btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
     <div class="top_container">
       <img class="top_img-background" src="/img/background.jpg" alt="top_img" />
@@ -71,46 +78,81 @@
         <h1>맑은 마음상담센터</h1>
       </div>
     </div>
-   <nav class="sidebar">
-    <ul>
-      <li class="nav_title"><span>치료 프로그램</span></a></li>
-      <li class="nav_item"><a href="/html/treatment/treatment_1.html"><span class="click">인지치료</span></a></li>
-      <li class="nav_item"><a href="/html/treatment/treatment_2.html"><span>언어치료</span></a></li>
-      <li class="nav_item"><a href="/html/treatment/treatment_3.html"><span>인지,언어통합치료</span></a></li>
-      <li class="nav_item"><a href="/html/treatment/treatment_4.html"><span>학습치료</span></a></li>
-      <li class="nav_item"><a href="/html/treatment/treatment_5.html"><span>미술치료</span></a></li>
-  </ul>
-   </nav>
-   <main class="main">
-       <h3 class="sub_title">인지치료</h3>
-       <div class="treat1_title">
-         <h3>인지치료란?</h3>
-         <p>인지학습을 학숩,행동 적용능력, 문제해결에 제한을 보인느 아동에게 학습기회를 제공해 잠재능력을 충분히 발휘하도록 지원합니다. 아동의 현재 발달 수준에 맞춰 다양하고 직접적인 교육접근과 반복학습을 통해 스스로 과제를 해결하도록 도와줘며, 실생활에 적용 가능하도록 합니다.</p>
-        </div>
-        <div class="treat1_description">
-          <h3>인지학습치료</h3>
-          <p>
-            <span>인지발달지연과 학습능력의 불균형으로 인지학습에 문제를 가진 아동을 대상으로 초기 인지 개념과 능력, 학습기술 향상을 돕는 교육적 치료입니다.</span>
-            <span>지적 자극의 결여, 발달지연, 정서적 불안정으로 인해 또래보다 잠재능력을 발휘하지 못하는 아동을을 대상으로 일상생활에서의 기본적인 신변처리 능력과 시지각협응능력, 기초적인 학습능력(모양,수,셈,문자 등) 문제해결 방법을 키우도록 돕는 치료방법입니다.</span>
-          </p>
-        </div>
-          <div class="treat1_box">
-            <h1>인지치료 대상</h1>
-            <ul>
-              <li>인지발달에 어려움을 가진 아동</li>
-              <li>취학 전 아동으로 기초적인 사물개념 이해가 어려운 아동</li>
-              <li>수, 개념, 시간, 공간개념 등에 어려움이 있는 아동</li>
-              <li>글자 읽기, 쓰기에 어려움이 있는 학령기 아동</li>
-              <li>지능은 정상이나 학습장애로 학습에 어려움을 가진 아동</li>
-              <li>학습이 부진한 아동</li>
-            </ul>
-            <ul>
-              <h3>학령 전 아동</h3>
-              <li>감각운동발달, 놀이발달, 인과관계, 사물개념, 공간개념, 형태개념,신체개념, 색 개념, 크기개념, 시간개념, 수 개념 등 교육</li>
-              <h3>학령기 아동</h3>
-              <li>사고력향상, 기초학습능력 향상, 문제해결능력, 읽기 이해, 시각 변별, 쓰기, 크기순서, 양, 공간 등의 기본 수학개념, 기억하기, 시간개념, 화폐개념 등 교육</li>
-            </ul>
-          </div>
-   </main>
-   </body>
+    <nav class="sidebar">
+      <ul>
+        <li class="nav_title"><span>치료 프로그램</span></li>
+        <li class="nav_item">
+          <a href="/html/treatment/treatment_1.html"
+            ><span class="click">인지치료</span></a
+          >
+        </li>
+        <li class="nav_item">
+          <a href="/html/treatment/treatment_2.html"><span>언어치료</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/treatment/treatment_3.html"
+            ><span>인지,언어통합치료</span></a
+          >
+        </li>
+        <li class="nav_item">
+          <a href="/html/treatment/treatment_4.html"><span>학습치료</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/treatment/treatment_5.html"><span>미술치료</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h3 class="sub_title">인지치료</h3>
+      <div class="treat1_title">
+        <h3>인지치료란?</h3>
+        <p>
+          인지학습을 학숩,행동 적용능력, 문제해결에 제한을 보인느 아동에게
+          학습기회를 제공해 잠재능력을 충분히 발휘하도록 지원합니다. 아동의 현재
+          발달 수준에 맞춰 다양하고 직접적인 교육접근과 반복학습을 통해 스스로
+          과제를 해결하도록 도와줘며, 실생활에 적용 가능하도록 합니다.
+        </p>
+      </div>
+      <div class="treat1_description">
+        <h3>인지학습치료</h3>
+        <p>
+          <span
+            >인지발달지연과 학습능력의 불균형으로 인지학습에 문제를 가진 아동을
+            대상으로 초기 인지 개념과 능력, 학습기술 향상을 돕는 교육적
+            치료입니다.</span
+          >
+          <span
+            >지적 자극의 결여, 발달지연, 정서적 불안정으로 인해 또래보다
+            잠재능력을 발휘하지 못하는 아동을을 대상으로 일상생활에서의 기본적인
+            신변처리 능력과 시지각협응능력, 기초적인 학습능력(모양,수,셈,문자
+            등) 문제해결 방법을 키우도록 돕는 치료방법입니다.</span
+          >
+        </p>
+      </div>
+      <div class="treat1_box">
+        <h1>인지치료 대상</h1>
+        <ul>
+          <li>인지발달에 어려움을 가진 아동</li>
+          <li>취학 전 아동으로 기초적인 사물개념 이해가 어려운 아동</li>
+          <li>수, 개념, 시간, 공간개념 등에 어려움이 있는 아동</li>
+          <li>글자 읽기, 쓰기에 어려움이 있는 학령기 아동</li>
+          <li>지능은 정상이나 학습장애로 학습에 어려움을 가진 아동</li>
+          <li>학습이 부진한 아동</li>
+        </ul>
+        <ul>
+          <h3>학령 전 아동</h3>
+          <li>
+            감각운동발달, 놀이발달, 인과관계, 사물개념, 공간개념,
+            형태개념,신체개념, 색 개념, 크기개념, 시간개념, 수 개념 등 교육
+          </li>
+          <h3>학령기 아동</h3>
+          <li>
+            사고력향상, 기초학습능력 향상, 문제해결능력, 읽기 이해, 시각 변별,
+            쓰기, 크기순서, 양, 공간 등의 기본 수학개념, 기억하기, 시간개념,
+            화폐개념 등 교육
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
