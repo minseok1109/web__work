@@ -1,1 +1,18 @@
-@media screen and (max-width: 600);
+@media screen and (max-width: 768px) {
+  .connect,
+  .clinic_info_box img,
+  .header .header__column:nth-child(2) {
+    display: none;
+  }
+  .header {
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid gray;
+  }
+  .header .mobile_header_btn {
+    display: block;
+  }
+}

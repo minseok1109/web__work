@@ -257,7 +257,6 @@ i.far {
   font-size: 20px;
   font-family: 'Libre Baskerville', serif;
   line-height: 45px;
-  text-align: center;
   text-shadow: 0 1px 1px #fff;
   padding-top: 20px;
   list-style-type: decimal;
@@ -542,6 +541,20 @@ i.far {
   margin-bottom: 1.5rem;
 }
 
+.old_box_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.old_box {
+  background: #0187ce;
+  width: max-content;
+  padding: 20px;
+  margin: 40px 0px;
+  color: white;
+  font-weight: 700;
+  border-radius: 40px;
+}
 /* stress */
 
 .stress_tit p {
@@ -661,4 +674,74 @@ i.far {
 .couple_list dl > dd {
   line-height: 30px;
   margin: 15px 0 40px 0;
+}
+
+/* treatment */
+.treat1_title h3 {
+  color: #1e2e6a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.treat1_title p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.treat1_description h3 {
+  color: #1e2e6a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.treat1_description p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.treat1_box {
+  background: #fffbec;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.treat1_box h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.treat1_box ul li {
+  list-style-type: circle;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+.treat1_box ul {
+  margin-bottom: 20px;
+}
+
+.treat1_box h3 {
+  background: #f18800;
+  width: max-content;
+  padding: 8px;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.process_list li .num_t {
+  background: #73a802;
+  width: max-content;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.process_list li {
+  line-height: 40px;
+  list-style-type: disc;
 }

@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>둘러보기</title>
-
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/detail.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -26,6 +44,7 @@
               <li><a href="/html/center/center_1.html">상담 안내</a></li>
               <li><a href="/html/center/center_2.html">상담원 소개</a></li>
               <li><a href="/html/center/center_3.html">오시는 길</a></li>
+              <li><a href="/html/center/center_4.html">둘러보기</a></li>
             </ul>
           </li>
           <li class="dropdown-parent">
@@ -66,22 +85,101 @@
       </div>
     </header>
     <div class="top_container">
-      <img class="top_img-background" src="/img/topImage.jpg" alt="top_img" />
+      <img class="top_img-background" src="/img/background.jpg" alt="top_img" />
       <div class="center_big_title">
         <h1>맑은 마음상담센터</h1>
       </div>
     </div>
-   <nav class="sidebar">
-       <ul>
-        <li class="nav_title"><span>센터 소개</span></a></li>
-        <li class="nav_item"><a href="/html/center/center.html"><span >소개 & 장점</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_1.html"><span>상담 안내</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_2.html"><span >상담원 소개</span></a></li>
-        <li class="nav_item"><a href="/html/center/center_3.html"><span >오시는 길</span></a></li>
-       </ul>
-   </nav>
-   <main class="main">
-       <h3 class="sub_title">둘러보기</h3>
-       
-   </main>
+    <nav class="sidebar">
+      <ul>
+        <li class="nav_title"><span>센터 소개</span></li>
+        <li class="nav_item">
+          <a href="/html/center/center.html"><span>소개 & 장점</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_1.html"><span>상담 안내</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_2.html"><span>상담원 소개</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_3.html"><span>오시는 길</span></a>
+        </li>
+        <li class="nav_item">
+          <a href="/html/center/center_4.html"
+            ><span class="click">둘러보기</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h3 class="sub_title">둘러보기</h3>
+      <div id="wrap">
+        <div class="visual">
+          <ul class="slide_wrap">
+            <li class="slide_li">
+              <img
+                src="/img/slider_1.jpg"
+                style="height: 850px; margin-bottom: 50px"
+              />
+            </li>
+            <li class="slide_li">
+              <img
+                src="/img/slider_2.jpg"
+                style="height: 850px; margin-bottom: 50px"
+              />
+            </li>
+            <li class="slide_li">
+              <img
+                src="/img/slider_3.jpg"
+                style="height: 850px; margin-bottom: 50px"
+              />
+            </li>
+            <li class="slide_li">
+              <img
+                src="/img/slider_4.jpg"
+                style="height: 850px; margin-bottom: 50px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript">
+      $(function () {
+        $('.slide_wrap').slick({
+          variableWidth: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          adaptiveHeight: true,
+          swipe: true,
+          responsive: [
+            {
+              breakpoint: 1920,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
 </html>
