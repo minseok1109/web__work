@@ -151,17 +151,16 @@
     <script type="text/javascript">
       $(function () {
         $('.slide_wrap').slick({
-          variableWidth: true,
-          slidesToShow: 4,
-          slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
+          slidesToShow: 1,
           autoplay: true,
           autoplaySpeed: 5000,
-          adaptiveHeight: true,
           responsive: [
             {
-              breakpoint: 2000,
+              breakpoint: 1800,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
               },
             },
@@ -169,13 +168,6 @@
               breakpoint: 768,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
                 slidesToScroll: 1,
               },
             },

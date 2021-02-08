@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 @import 'mobile.css';
 
+.mobile_cards {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

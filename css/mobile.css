@@ -79,4 +79,17 @@
     padding: 35px;
     margin-left: 0px !important;
   }
+
+  .adhd_box li {
+    height: 350px;
+  }
+  .visual button.slick-prev {
+    margin-left: -16px !important;
+    opacity: 0.2;
+  }
+
+  button.slick-next {
+    margin-left: 540px !important;
+    opacity: 0.2;
+  }
 }
