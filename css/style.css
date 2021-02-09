@@ -189,9 +189,14 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
 .clinic_info .clinic_info_list .clinic_info_detail {
   font-size: 1.5rem;
   margin-bottom: 9rem;
+}
+
+.clinic_info .clinic_info_list .clinic_info_detail .a {
+  display: inline-block;
 }
 
 .clinic_info .clinic_info_list .clinic_info_detail:last-child {
